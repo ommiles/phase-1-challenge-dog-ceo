@@ -1,0 +1,77 @@
+* {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+    font-size: 80px;
+    padding-left: 50px;
+    margin: 0;
+}
+
+h2 {
+    padding: 0 0 50px 50px;
+    margin: 0;
+}
+
+#dog-image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: center;    
+}
+
+img {
+    float: left;
+    width:  425px;
+    height: 425px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+label,
+select,
+option {
+    font-size: 30px;
+}
+
+ul,
+label {
+    padding-left: 50px;
+}
+
+li {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #dog-image-container {
+        grid-template-columns: 1fr;    
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #dog-image-container {
+        grid-template-columns: 1fr;    
+    }
+}
+
+@media only screen and (min-width: 880px) {
+    #dog-image-container {
+        grid-template-columns: 1fr 1fr;    
+    }
+    img {
+        width:  400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 1175px) {
+    #dog-image-container {
+        grid-template-columns: 1fr 1fr 1fr;    
+    }
+    img {
+        width:  350px;
+        height: 350px;
+    }
+}
